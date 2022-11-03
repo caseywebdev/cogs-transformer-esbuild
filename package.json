@@ -1,0 +1,22 @@
+{
+  "name": "cogs-transformer-esbuild",
+  "version": "1.0.0",
+  "author": "Casey Foster <c@sey.me>",
+  "description": "An esbuild transformer for Cogs.",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caseywebdev/cogs-transformer-esbuild"
+  },
+  "dependencies": {
+    "esbuild": "0.15"
+  },
+  "devDependencies": {
+    "cogs-test-helper": "4"
+  },
+  "scripts": {
+    "test": "cogs-test-helper test/test.js"
+  }
+}
