@@ -17,6 +17,10 @@ var __copyProps = (to, from, except, desc) => {
   return to;
 };
 var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  // If the importer is in node compatibility mode or this is not an ESM
+  // file that has been converted to a CommonJS file using a Babel-
+  // compatible transform (i.e. "__esModule" has not been set), then set
+  // "default" to the CommonJS "module.exports" for node compatibility.
   isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
   mod
 ));
@@ -28,9 +32,7 @@ __export(input_exports, {
 module.exports = __toCommonJS(input_exports);
 var import_jsx_dev_runtime = require("react/jsx-dev-runtime");
 var import_jquery = __toESM(require("jquery"));
-const app = (0, import_jquery.default)(() => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-  id: "foo"
-}, void 0, false, {
+const app = (0, import_jquery.default)(() => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { id: "foo" }, void 0, false, {
   fileName: "test/input.js",
   lineNumber: 3,
   columnNumber: 21
