@@ -36,5 +36,5 @@ const app = (0, import_jquery.default)(() => /* @__PURE__ */ (0, import_jsx_dev_
   fileName: "test/input.js",
   lineNumber: 3,
   columnNumber: 21
-}, this));
+}));
 var input_default = app;
