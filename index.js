@@ -1,9 +1,9 @@
-import esbuild from 'esbuild';
+import { transform } from 'esbuild';
 
 const { Buffer } = globalThis;
 
 export default async ({ file: { buffer, path }, options }) => {
   options = { sourcefile: path, ...options };
-  const { code } = await esbuild.transform(buffer.toString(), options);
+  const { code } = await transform(buffer.toString(), options);
   return { buffer: Buffer.from(code) };
 };
